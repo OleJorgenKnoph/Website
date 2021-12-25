@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #FEFEFE;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );
+}
+.logo {
+    align-self: flex-start;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    width: 100%;
+}
+    .logo img{
+        height: calc(40px + 1.2vw);
+        width: calc(90px + 1.2vw);
+        margin: auto;
+    }
+.content {
+    margin-top: calc(80px + 25vh);
+    padding: calc(20px + 3vw);
+    text-align: center;
+}
+.morphism {
+    border-radius: 15px;
+    padding: 10px;
+    backdrop-filter: blur(30px)
+}
+    .mainTitle{
+        font-size: calc(20px + 1.3vw);
+        font-weight: bold;
+    }
+        .animate-dot {
+            position: relative;
+            animation: dotJump 1.3s infinite;
+        }
+        .ad1 {
+            -webkit-animation-delay: 100ms;
+            animation-delay: 100ms;
+        }
+        .ad2 {
+            -webkit-animation-delay: 100ms;
+            animation-delay: 200ms;
+        }
+        .ad3 {
+            -webkit-animation-delay: 100ms;
+            animation-delay: 300ms;
+        }
+    @keyframes dotJump {
+        0% {
+            bottom: 0;
+        }
+        20% {
+            bottom: 5px;
+        }
+        40% {
+            bottom: 0;
+        }
+    }
+    .socials{
+        width: calc(50% + 10vw);
+        margin: 10px auto;
+    }
+    .socials ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    li {
+        list-style-type: none;
+        padding: 3px;
+        margin: auto 10px;
+    }
+    .socials a i {
+        font-size: calc(20px + 2vw);
+        color: #FEFEFE;
+    }
+    li a i:hover{
+        bottom: 2px;
+        position: relative;
+        color: #0E0E10;
+    }
